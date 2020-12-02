@@ -55,4 +55,4 @@ Global State
 
 | Perl             | XS             |
 | ---------------- | -------------- |
-| `${^GLOBAL_PHASE}` | `PL_phase`/`PL_dirty` |
+| `${^GLOBAL_PHASE}` | `PL_phase` / `PL_dirty` |
