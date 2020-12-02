@@ -49,3 +49,10 @@ Packages/Namespaces
 | Perl             | XS               |
 | ----------------- | ---------------- |
 | `__PACKAGE__`    | `HvNAME( (HV*)CopSTASH(PL_curcop) )` |
+
+Global State
+------------
+
+| Perl             | XS             |
+| ---------------- | -------------- |
+| `${^GLOBAL_PHASE}` | `PL_phase`/`PL_dirty` |
