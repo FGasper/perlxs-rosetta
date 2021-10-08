@@ -41,6 +41,7 @@ Arrays
 | `($old) = splice(@a, 2, 1, $foo)` | `SV **old = av_store(myav, 2, foo)` |
 | `my ($el) = splice(@, 2, 1)` | `SV *myel = av_delete(myav, 2, 0)` |
 | `() = splice(@, 2, 1)` | `av_delete(myav, 2, G_DISCARD)` |
+| `@INC`  | `get_av("main::INC")` or `(GvAV(PL_incgv))` |
 
 
 Packages/Namespaces
