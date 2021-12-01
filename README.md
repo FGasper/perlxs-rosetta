@@ -28,6 +28,13 @@ Scalars: concatenation
 | `$v .= 'a'`  | `sv_catpv(mysv, "a")` |
 | `$v .= "\0\1\2"`  | `sv_catpvn(mysv, "\0\1\2", 3)` |
 
+Scalars: length
+------
+
+| Perl     | XS       |
+| --------- |    ---- |
+| `length $a` | `sv_len_utf8(a)` |
+
 Arrays
 ------
 
