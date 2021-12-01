@@ -17,8 +17,8 @@ Scalars: assignment
 | `my $v = 1`   | `SV *mysv = newSVuv(1)` |
 | `$v = 1`   | `sv_setuv(mysv, 1)` |
 | `$v = -1`  | `sv_setiv(mysv, -1)` |
-| `$v = q<>`  | `sv_setpv(mysv, "")` |
-| `$v = "\0\1\2"`  | `sv_setpvn(mysv, "\0\1\2", 3)` |
+| `$v = 'literal'`  | `sv_setpvs(mysv, "literal")` |
+| `$v = $other_str`  | `sv_setpvn(mysv, otherstr, length_of_otherstr)` |
 
 Scalars: concatenation
 -------
