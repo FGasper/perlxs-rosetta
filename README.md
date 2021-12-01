@@ -26,7 +26,7 @@ Scalars: concatenation
 | Perl             | XS               |
 | ----------------- | ---------------- |
 | `$v .= 'a'`  | `sv_catpv(mysv, "a")` |
-| `$v .= "\0\1\2"`  | `sv_catpvn(mysv, "\0\1\2", 3)` |
+| `$v .= $other_str`  | `sv_catpvn(mysv, otherstr, length_of_otherstr)` |
 
 Scalars: length
 ------
