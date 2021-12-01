@@ -12,7 +12,7 @@ Scalars: assignment
 
 | Perl             | XS               |
 | ----------------- | ---------------- |
-| `my $v`    | `SV *mysv = newSV()` |
+| `my $v`    | `SV *mysv = newSV(0)` |
 | `$v = undef`    | `sv_set_undef(mysv)` |
 | `my $v = 1`   | `SV *mysv = newSVuv(1)` |
 | `$v = 1`   | `sv_setuv(mysv, 1)` |
