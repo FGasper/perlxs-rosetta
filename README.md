@@ -13,7 +13,7 @@ Scalars: assignment
 | Perl             | XS               |
 | ----------------- | ---------------- |
 | `my $v`    | `SV *mysv = newSV()` |
-| `$v = undef`    | `mysv = &PL_sv_undef` |
+| `$v = undef`    | `sv_set_undef(mysv)` |
 | `my $v = 1`   | `SV *mysv = newSVuv(1)` |
 | `$v = 1`   | `sv_setuv(mysv, 1)` |
 | `$v = -1`  | `sv_setiv(mysv, -1)` |
@@ -33,7 +33,7 @@ Scalars: length
 
 | Perl     | XS       |
 | --------- |    ---- |
-| `length $a` | `sv_len_utf8(a)` |
+| `length $a` | `sv_len_utf8(mysv)` |
 
 Arrays
 ------
